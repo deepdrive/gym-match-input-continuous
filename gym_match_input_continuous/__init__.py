@@ -14,3 +14,9 @@ register(
     id='corrective-psuedo-steering-v0',
     entry_point='gym_match_input_continuous.envs:CorrectivePsuedoSteeringEnv',
 )
+
+
+register(
+    id='stable-tracking-v0',
+    entry_point='gym_match_input_continuous.envs:StableTrackingEnv',
+)
