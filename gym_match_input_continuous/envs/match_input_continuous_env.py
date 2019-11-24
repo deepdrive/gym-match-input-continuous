@@ -28,6 +28,7 @@ class MatchInputContinuousEnv(gym.Env):
         # log.info(f'target={self.target}')
         observation = self.get_observation()
         self.step_num += 1
+        done = False
         if self.step_num % 100 == 0:
             # HACK: End episodes to work with pytorch-actor-critic
             done = True
