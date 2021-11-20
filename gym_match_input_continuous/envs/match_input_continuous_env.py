@@ -22,7 +22,7 @@ class MatchInputContinuousEnv(gym.Env):
 
     def step(self, action: np.ndarray):
         action = action[0]
-        reward = 1 - abs(self.target - action)  # Max ~1, min ~-1
+        reward = 1 - abs(self.target - action)  # Max ~1, min ~-1       
         # log.info(f'reward={reward}')
         # log.info(f'action={action}')
         # log.info(f'target={self.target}')
